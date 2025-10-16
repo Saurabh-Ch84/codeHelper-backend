@@ -1,55 +1,105 @@
 module.exports= [
-  "def", "class", "if", "elif", "else", "for", "while", "break", "continue", "return",
-  "import", "from", "as", "try", "except", "finally", "raise", "with", "pass", "lambda",
-  "yield", "global", "nonlocal", "assert", "del", "in", "is", "not", "and", "or",
-  "True", "False", "None", "self", "super", "init", "__init__", "__str__", "__repr__", "__len__",
-  "__getitem__", "__setitem__", "__delitem__", "__iter__", "__next__", "__call__", "__enter__", "__exit__", "__new__", "__del__",
-  "__eq__", "__ne__", "__lt__", "__le__", "__gt__", "__ge__", "__add__", "__sub__", "__mul__", "__truediv__",
-  "__floordiv__", "__mod__", "__pow__", "__and__", "__or__", "__xor__", "__invert__", "__lshift__", "__rshift__", "__contains__",
-  "__hash__", "__bool__", "__int__", "__float__", "__complex__", "__index__", "__round__", "__trunc__", "__floor__", "__ceil__",
-  "print", "input", "len", "range", "enumerate", "zip", "map", "filter", "reduce", "sorted",
-  "reversed", "sum", "min", "max", "abs", "all", "any", "bin", "hex", "oct",
-  "chr", "ord", "str", "int", "float", "bool", "list", "tuple", "dict", "set",
-  "frozenset", "bytes", "bytearray", "memoryview", "type", "isinstance", "issubclass", "hasattr", "getattr", "setattr",
-  "delattr", "dir", "vars", "id", "callable", "format", "open", "close", "read", "write",
-  "readline", "readlines", "writelines", "seek", "tell", "flush", "append", "extend", "insert", "remove",
-  "pop", "clear", "index", "count", "sort", "reverse", "copy", "deepcopy", "join", "split",
-  "strip", "lstrip", "rstrip", "replace", "find", "rfind", "startswith", "endswith", "upper", "lower",
-  "capitalize", "title", "swapcase", "center", "ljust", "rjust", "zfill", "isalpha", "isdigit", "isalnum",
-  "isspace", "isupper", "islower", "istitle", "isdecimal", "isnumeric", "isidentifier", "isprintable", "encode", "decode",
-  "format", "format_map", "maketrans", "translate", "partition", "rpartition", "splitlines", "expandtabs", "casefold", "removeprefix",
-  "removesuffix", "keys", "values", "items", "get", "setdefault", "update", "pop", "popitem", "clear",
-  "copy", "fromkeys", "list", "tuple", "set", "dict", "str", "int", "float", "complex",
-  "bool", "bytes", "bytearray", "range", "slice", "object", "property", "staticmethod", "classmethod", "abstractmethod",
-  "dataclass", "field", "asdict", "astuple", "replace", "functools", "partial", "wraps", "lru_cache", "cache",
-  "total_ordering", "singledispatch", "reduce", "cmp_to_key", "itertools", "chain", "combinations", "combinations_with_replacement", "compress", "count",
-  "cycle", "dropwhile", "takewhile", "filterfalse", "groupby", "islice", "permutations", "product", "repeat", "starmap",
-  "tee", "zip_longest", "accumulate", "pairwise", "collections", "Counter", "defaultdict", "OrderedDict", "ChainMap", "namedtuple",
-  "deque", "UserDict", "UserList", "UserString", "most_common", "elements", "subtract", "popleft", "appendleft", "extendleft",
-  "rotate", "maxlen", "array", "heapq", "heappush", "heappop", "heappushpop", "heapreplace", "heapify", "nlargest",
-  "nsmallest", "merge", "bisect", "bisect_left", "bisect_right", "insort", "insort_left", "insort_right", "math", "sqrt",
-  "pow", "exp", "log", "log10", "log2", "ceil", "floor", "trunc", "factorial", "gcd",
-  "lcm", "isqrt", "comb", "perm", "sin", "cos", "tan", "asin", "acos", "atan",
-  "atan2", "sinh", "cosh", "tanh", "asinh", "acosh", "atanh", "degrees", "radians", "pi",
-  "e", "tau", "inf", "nan", "isnan", "isinf", "isfinite", "copysign", "fabs", "fmod",
-  "frexp", "ldexp", "modf", "remainder", "hypot", "dist", "fsum", "prod", "erf", "erfc",
-  "gamma", "lgamma", "random", "randint", "randrange", "choice", "choices", "sample", "shuffle", "uniform",
-  "triangular", "betavariate", "expovariate", "gammavariate", "gauss", "lognormvariate", "normalvariate", "vonmisesvariate", "paretovariate", "weibullvariate",
-  "seed", "getstate", "setstate", "randbytes", "SystemRandom", "datetime", "date", "time", "timedelta", "timezone",
-  "now", "today", "utcnow", "fromtimestamp", "utcfromtimestamp", "combine", "strftime", "strptime", "isoformat", "fromisoformat",
-  "year", "month", "day", "hour", "minute", "second", "microsecond", "tzinfo", "weekday", "isoweekday",
-  "isocalendar", "replace", "total_seconds", "days", "seconds", "microseconds", "timedelta", "re", "compile", "search",
-  "match", "fullmatch", "findall", "finditer", "sub", "subn", "split", "escape", "purge", "Pattern",
-  "Match", "group", "groups", "groupdict", "start", "end", "span", "IGNORECASE", "MULTILINE", "DOTALL",
-  "VERBOSE", "ASCII", "LOCALE", "json", "loads", "dumps", "load", "dump", "JSONEncoder", "JSONDecoder",
-  "os", "path", "listdir", "mkdir", "makedirs", "remove", "rmdir", "removedirs", "rename", "renames",
-  "getcwd", "chdir", "walk", "environ", "getenv", "system", "popen", "exists", "isfile", "isdir",
-  "islink", "join", "split", "splitext", "basename", "dirname", "abspath", "realpath", "normpath", "expanduser",
-  "expandvars", "getsize", "getmtime", "getctime", "getatime", "sys", "argv", "exit", "path", "platform",
-  "version", "version_info", "executable", "stdin", "stdout", "stderr", "modules", "getsizeof", "getrefcount", "getrecursionlimit",
-  "setrecursionlimit", "exc_info", "threading", "Thread", "Lock", "RLock", "Semaphore", "BoundedSemaphore", "Event", "Condition",
-  "Timer", "Barrier", "local", "current_thread", "active_count", "enumerate", "main_thread", "settrace", "setprofile", "stack_size",
-  "start", "run", "join", "is_alive", "daemon", "name", "ident", "native_id", "acquire", "release",
-  "locked", "wait", "notify", "notify_all", "set", "clear", "is_set", "multiprocessing", "Process", "Queue",
-  "Pipe", "Pool", "Manager", "Value", "Array", "asyncio", "async", "await", "create_task", "gather"
+  // --- Keywords ---
+  'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class',
+  'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global',
+  'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+  'return', 'try', 'while', 'with', 'yield',
+
+  // --- Built-in Functions & Types ---
+  'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable',
+  'chr', 'classmethod', 'compile', 'complex', 'delattr', 'dict', 'dir', 'divmod', 'enumerate',
+  'eval', 'exec', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr',
+  'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len',
+  'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open',
+  'ord', 'pow', 'print', 'property', 'range', 'repr', 'reversed', 'round', 'set', 'setattr',
+  'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip',
+
+  // --- Common "Dunder" (Double Underscore) Methods & Attributes ---
+  '__init__', '__str__', '__repr__', '__len__', '__getitem__', '__setitem__', '__delitem__',
+  '__iter__', '__next__', '__contains__', '__call__', '__enter__', '__exit__', '__eq__',
+  '__ne__', '__lt__', '__gt__', '__le__', '__ge__', '__add__', '__sub__', '__mul__',
+  '__truediv__', '__floordiv__', '__mod__', '__pow__', '__name__', '__main__', '__dict__',
+  '__doc__', '__module__', '__class__', '__slots__', '__annotations__',
+
+  // --- Common Exception Names ---
+  'Exception', 'ValueError', 'TypeError', 'KeyError', 'IndexError', 'AttributeError', 'NameError',
+  'FileNotFoundError', 'IOError', 'ImportError', 'ModuleNotFoundError', 'StopIteration',
+  'ZeroDivisionError', 'AssertionError', 'KeyboardInterrupt', 'MemoryError', 'NotImplementedError',
+  'SyntaxError', 'IndentationError', 'RuntimeError', 'SystemExit', 'ConnectionError', 'TimeoutError',
+
+  // --- Common Standard Library Modules & Functions ---
+  // os & sys
+  'os', 'sys', 'os.path', 'os.path.join', 'os.path.exists', 'os.path.isdir', 'os.path.isfile',
+  'os.listdir', 'os.getcwd', 'os.chdir', 'os.mkdir', 'os.makedirs', 'os.remove', 'os.rename',
+  'os.environ', 'os.getenv', 'os.system', 'sys.argv', 'sys.exit', 'sys.path', 'sys.version',
+  // datetime & time
+  'datetime', 'date', 'time', 'timedelta', 'now', 'utcnow', 'strptime', 'strftime', 'today',
+  'time.sleep', 'time.time',
+  // json
+  'json', 'json.load', 'json.loads', 'json.dump', 'json.dumps',
+  // re (Regular Expressions)
+  're', 're.compile', 're.search', 're.match', 're.findall', 're.sub', 're.split', 're.IGNORECASE',
+  // collections
+  'collections', 'defaultdict', 'Counter', 'deque', 'namedtuple', 'OrderedDict',
+  // math
+  'math', 'math.sqrt', 'math.pow', 'math.ceil', 'math.floor', 'math.sin', 'math.cos', 'math.tan',
+  'math.pi', 'math.e', 'math.log', 'math.exp',
+  // random
+  'random', 'random.random', 'random.randint', 'random.choice', 'random.shuffle', 'random.uniform',
+  // argparse & logging
+  'argparse', 'ArgumentParser', 'add_argument', 'parse_args', 'logging', 'basicConfig',
+  'getLogger', 'info', 'debug', 'warning', 'error', 'critical',
+  // other common modules
+  'itertools', 'functools', 'operator', 'pathlib', 'Path', 'pickle', 'shutil', 'subprocess',
+  'threading', 'multiprocessing', 'urllib', 'http', 'unittest', 'copy', 'deepcopy', 'glob',
+
+  // --- Common Concepts & Variable Names ---
+  'self', 'cls', 'args', 'kwargs', 'request', 'response', 'app', 'db', 'session', 'user', 'data',
+  'result', 'file', 'path', 'url', 'config', 'params', 'headers', 'payload', 'context', 'template',
+
+  // --- Data Science & Machine Learning ---
+  // NumPy
+  'numpy', 'np', 'np.array', 'np.arange', 'np.zeros', 'np.ones', 'np.linspace', 'np.random',
+  'np.shape', 'np.reshape', 'np.dot', 'np.mean', 'np.std', 'np.sum', 'np.min', 'np.max', 'np.ndarray',
+  'np.sqrt', 'np.exp', 'np.log', 'np.vstack', 'np.hstack', 'np.eye', 'np.nan',
+  // Pandas
+  'pandas', 'pd', 'pd.DataFrame', 'pd.Series', 'pd.read_csv', 'pd.read_excel', 'pd.to_datetime',
+  'df.head', 'df.tail', 'df.describe', 'df.info', 'df.shape', 'df.columns', 'df.index', 'df.values',
+  'df.loc', 'df.iloc', 'df.groupby', 'df.sort_values', 'df.merge', 'df.concat', 'df.apply',
+  'df.to_csv', 'df.to_excel', 'df.isnull', 'df.dropna', 'df.fillna', 'df.pivot_table',
+  // Matplotlib & Seaborn
+  'matplotlib', 'pyplot', 'plt', 'plt.show', 'plt.plot', 'plt.scatter', 'plt.bar', 'plt.hist',
+  'plt.xlabel', 'plt.ylabel', 'plt.title', 'plt.figure', 'plt.subplot', 'plt.legend',
+  'seaborn', 'sns', 'sns.lineplot', 'sns.scatterplot', 'sns.heatmap', 'sns.boxplot',
+  // Scikit-learn
+  'sklearn', 'model_selection', 'train_test_split', 'linear_model', 'LinearRegression', 'LogisticRegression',
+  'tree', 'DecisionTreeClassifier', 'ensemble', 'RandomForestClassifier', 'svm', 'SVC', 'neighbors',
+  'KNeighborsClassifier', 'metrics', 'accuracy_score', 'confusion_matrix', 'classification_report',
+  'preprocessing', 'StandardScaler', 'MinMaxScaler', 'fit', 'predict', 'transform', 'fit_transform',
+
+  // --- Web Development ---
+  // Requests
+  'requests', 'requests.get', 'requests.post', 'requests.put', 'requests.delete', 'requests.head',
+  'requests.options', 'response.status_code', 'response.json', 'response.text', 'response.content',
+  'response.headers',
+  // Flask
+  'flask', 'Flask', 'render_template', 'request', 'jsonify', 'redirect', 'url_for', 'session', 'g',
+  'app.route', 'Blueprint', 'abort', 'send_from_directory',
+  // Django
+  'django', 'models', 'views', 'urls', 'admin', 'settings', 'manage.py', 'HttpRequest', 'HttpResponse',
+  'render', 'get_object_or_404', 'Model', 'CharField', 'IntegerField', 'TextField', 'DateTimeField',
+  'ForeignKey', 'ManyToManyField', 'OneToOneField', 'objects.all', 'objects.filter', 'objects.get',
+  'objects.create', 'forms', 'Form', 'ModelForm', 'contrib', 'auth', 'User', 'TemplateView', 'ListView',
+  'DetailView', 'CreateView', 'UpdateView', 'DeleteView', 'urlpatterns', 'path',
+
+  // --- Other Popular Libraries ---
+  // SQLAlchemy
+  'sqlalchemy', 'create_engine', 'Column', 'Integer', 'String', 'MetaData', 'Table', 'Session',
+  'declarative_base', 'sessionmaker', 'query',
+  // Pillow (PIL)
+  'PIL', 'Image', 'Image.open', 'Image.save', 'Image.resize', 'Image.thumbnail', 'Image.crop', 'ImageDraw',
+  // Pytest
+  'pytest', 'fixture', 'raises', 'mark', 'parametrize',
+  // Beautiful Soup
+  'bs4', 'BeautifulSoup', 'find', 'find_all', 'select', 'get_text',
 ];
