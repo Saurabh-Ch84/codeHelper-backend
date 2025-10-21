@@ -8,7 +8,7 @@ const keywords = {
 
 const wss = new WebSocket.Server({ port: 8080 });
 
-console.log('Smart server is running on ws://localhost:8080');
+console.log('Smart server is running on port 8080');
 
 wss.on('connection', (ws) => {
   console.log('Frontend connected!');
