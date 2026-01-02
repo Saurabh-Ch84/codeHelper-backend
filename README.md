@@ -1,5 +1,3 @@
-
-```markdown
 # GFG Sarthi - Backend 🚀
 
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green) ![WebSockets](https://img.shields.io/badge/Protocol-WebSocket-blue) ![Data Structure](https://img.shields.io/badge/Algorithm-Trie-orange)
