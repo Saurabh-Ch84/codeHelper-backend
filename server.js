@@ -1,4 +1,5 @@
 const WebSocket = require('ws');
+const http = require('http');
 const { Trie } = require('./utils/trie.js');
 
 const keywords = {
