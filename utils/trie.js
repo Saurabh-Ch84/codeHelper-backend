@@ -1,0 +1,47 @@
+class TrieNode{
+    constructor(){
+        this.isEnd=false;
+        this.children=new Map();
+    }
+};
+
+class Trie{
+    constructor(){
+        this.root=new TrieNode();
+    }
+
+    insert(word){
+        let current=this.root;
+        for(let letter of word){
+            if(!current.children.has(letter)){
+                current.children.set(letter,new TrieNode());
+            }
+            current=current.children.get(letter);
+        }
+        current.isEnd=true;
+    }
+
+    getMatchedWords(prefix){
+        let current=this.root;
+        const len=prefix.length;
+        for(let i=0;i<len;i++){
+            if(!current.children.has(prefix[i]))
+                return [];
+            current=current.children.get(prefix[i]);
+        }
+        const matchingList=[];
+        this.getMatchingListOfWords(matchingList,current,prefix);
+        return matchingList;
+    }
+
+    getMatchingListOfWords(matchingList,current,currentWord){
+        if(current.isEnd){
+            matchingList.push(currentWord);
+        }
+        for(let [key,value] of current.children.entries()){
+            this.getMatchingListOfWords(matchingList,value,currentWord+key);
+        }
+    }
+};
+
+module.exports={Trie};
