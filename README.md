@@ -12,7 +12,7 @@ low-latency syntax suggestions to users solving coding problems on platforms lik
 feedback regardless of dictionary size.
 * **Multi-Language Support:** Curated keyword datasets for **C++, Java, and Python**.
 * **Scalable Architecture:**
-    * **V1.1.0 Upgrade:** Moved search logic from frontend to backend to reduce client memory usage and network payload size.
+    * **V1.1.0 Upgrade:** Improved backend response fetching logic to reduce memory usage, latency and network payload size.
     * **In-Memory Caching:** Loads keyword datasets into RAM at startup for zero-latency queries.
 * **Production Ready:** Configured for cloud deployment (Render/Heroku) with dynamic port binding and health checks.
 
