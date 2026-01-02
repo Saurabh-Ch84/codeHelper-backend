@@ -44,18 +44,15 @@ wss.on('connection', (ws) => {
       const partialWord=data.word || '';
       const language=data.language|| 'cpp';
       console.log(`${partialWord} received, language:${language}`);
-      
-      // this was version 1.0.0
-      // const languageList=keywords[language];
-      // const suggestionList=languageList.filter(kw=>
-      //   kw.toLowerCase().startsWith(partialWord.toLowerCase())
-      // );
 
       // version 1.1.0
+      if (!partialWord || partialWord.length === 0) {
+          ws.send(JSON.stringify([]));
+          return; 
+      }
       const selectedTrie=tries[language];
       let suggestionList=[];
-      suggestionList = selectedTrie.getMatchedWords(partialWord);
-
+      suggestionList = selectedTrie.getMatchedWords(partialWord,30);
       const response=JSON.stringify(suggestionList);
       console.log('Sending matching words:',response);
       ws.send(response);

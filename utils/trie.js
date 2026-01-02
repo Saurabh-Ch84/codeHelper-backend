@@ -21,7 +21,7 @@ class Trie{
         current.isEnd=true;
     }
 
-    getMatchedWords(prefix){
+    getMatchedWords(prefix,limit=50){
         let current=this.root;
         const len=prefix.length;
         for(let i=0;i<len;i++){
@@ -30,15 +30,17 @@ class Trie{
             current=current.children.get(prefix[i]);
         }
         const matchingList=[];
-        this.getMatchingListOfWords(matchingList,current,prefix);
+        this.getMatchingListOfWords(matchingList,current,prefix,limit);
         return matchingList;
     }
 
-    getMatchingListOfWords(matchingList,current,currentWord){
+    getMatchingListOfWords(matchingList,current,currentWord,limit){
+        if(matchingList.length>=limit) return ;
         if(current.isEnd){
             matchingList.push(currentWord);
         }
         for(let [key,value] of current.children.entries()){
+            if (matchingList.length >= limit) return;
             this.getMatchingListOfWords(matchingList,value,currentWord+key);
         }
     }
