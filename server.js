@@ -23,10 +23,14 @@ Object.keys(keywords).forEach(lang => {
 console.log("Initialization Complete. Server Ready.");
 
 const PORT = process.env.PORT || 8080;
-const server = require('http').createServer(); // Create a standard HTTP server
-const wss = new WebSocket.Server({ server }); // Attach WebSocket to it
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('GFG Sarthi Backend is Running!'); 
+});
 
-server.listen(PORT, () => {
+const wss = new WebSocket.Server({ server });
+
+server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is listening on port ${PORT}`);
 });
 
